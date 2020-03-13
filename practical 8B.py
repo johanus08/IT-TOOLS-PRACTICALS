@@ -1,11 +1,12 @@
-#Python program
-#to overload an binary + operator
-
+# Python program
+# To overload an binary + operator
+# Class a created
 class A:
+     
      def __init__(self,a):
           self.a=a
 
-     #adding two objwcts
+     # Adding two objwcts
      def __add__(self,o):
           return self.a+o.a
 
