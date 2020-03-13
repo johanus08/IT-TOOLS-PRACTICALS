@@ -1,6 +1,11 @@
+# Python program to accept time in hours and minutes 
+# And display total time
+# Class Time created
 class Time:
         h=0
         m=0
+        
+        #  Defining functions
         def accept(self):
              print("Enter time in hours and minutes")
              self.h=int(input( ))
@@ -9,10 +14,12 @@ class Time:
         def display(self):
              print(self.h,"hours and",self.m,"minutes")
 
+# Class final_time created
 class final_time:
         h=0
         m=0
 
+        #  Defining function
         def accept (self,t):
               self.h=t.h
               self.m=t.m
@@ -26,7 +33,7 @@ class final_time:
         def display(self):
               print(self.h,"hours and",self.m,"minutes")
 
-         
+# Creating objects and calling them         
 t1_obj=Time()
 t1_obj.accept()
 t2_obj=Time()
