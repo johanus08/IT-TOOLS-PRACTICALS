@@ -1,4 +1,6 @@
+# Class student created
 class Student:
+    
     s_name = input("Enter name of the student: ")
     s_roll_no = input("ENter the roll no of the student:")
     s_class = input("Enter the class of the studnet:")
@@ -6,7 +8,8 @@ class Student:
     marks = []
     for i in subjects:
         marks.append(sum(list(map(int(input(f"Enter marks of {i[0],i[1],i[2]}").rstrip().split())))))
-
+        
+    # Different functions for calculations
     def total_marks(self):
         print(sum(Student.marks))
     def percentage_of_total_marks(self):
