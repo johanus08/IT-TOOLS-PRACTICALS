@@ -1,26 +1,26 @@
-# parent class
+# Parent class
 class Animal:
-  # properties
+  # Properties
 	multicellular = True
 	# Eukaryotic means Cells with Nucleus
 	eukaryotic = True
 	
-	# function breath
+	# Function breath
 	def breathe(self):
 	    print("I breathe oxygen.")
     
-  # function feed
+  	# Function feed
 	def feed(self):
 	    print("I eat food.")
 	    
-# child class	    
+# Child class	    
 class Herbivorous(Animal):
     
-    # function feed
+    	# Function feed
 	def feed(self):
 	    print("I eat only plants. I am vegetarian.")
 
 herbi = Herbivorous()
 herbi.feed()
-# calling some other function
+# Calling some other function
 herbi.breathe()
