@@ -1,21 +1,20 @@
+# Class employee created
 class Employee:
-     #class employee created
-
+   
+     # Function to calculate salary and incentive.
      def add(self,salary,incentive):
-          #function to calculate salary and incentive.
-
           print(f"Total salary of the base class is {salary + incentive}.")
 
+# Class department created
 class Department(Employee):
-     #class department created
-
+     
      temp = "I am a member of the department class."
+     
+     # Function to calculate salary and incentive
      def add(self,salary,incentive):
-          #function to calculate salary and incentive.
-
           print(f"Total salary of the derived class is {salary + incentive}.")
           super(Department,self).add(salary,incentive)
 
-#class objects created.
+# Class objects created.
 dept = Department()
 dept.add(45000,5000)
