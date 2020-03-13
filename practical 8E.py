@@ -1,6 +1,6 @@
-#Python program to overload equality
-# and less thean operator
-
+# Python program to overload equality
+# And less thean operator
+# Class A created
 class A:
      def __init__(self,a):
           self.a=a
