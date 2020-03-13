@@ -1,5 +1,5 @@
-#Python program to overload
-# a comparison operators
+# Python program to overload
+# A comparison operators
 
 class A:
      def __init__(self,a):
