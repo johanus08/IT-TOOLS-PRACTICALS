@@ -1,13 +1,13 @@
-#python program to perform addition
-#of two complex numbers using binary
-#+ operator overloading
+# Python program to perform addition
+# Of two complex numbers using binary
+# + operator overloading
 
 class complex:
      def __init__(self,a,b):
           self.a=a
           self.b=b
 
-     #adding two objects
+     # Adding two objects
      def __add__(self,other):
           return self.a+other.a,self.b+other.b
 
