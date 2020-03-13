@@ -1,13 +1,12 @@
-#Abstract class code.
-
-#importing reqiured modules.
+# Abstract class code.
+# Importing reqiured modules.
 from abc import ABC
 import math
 
+ # Abstract class
 class Shape(ABC):
-     #Abstract class
-
-     #empty functions.
+    
+     # Empty functions.
      def calculateArea(self):
           pass
 
@@ -17,28 +16,23 @@ class Shape(ABC):
      def noofsides(self):
           pass
 
+# Will display details about square.
 class Square(Shape):
-     #will display details about square.
+     _side = int(input("Enter the length of side: "))  # Data for Square.
 
-     _side = int(input("Enter the length of side: "))       #Data for Square.
-
+     # Will calculate Area.
      def calculateArea(self):
-          #Will calculate Area.
-          
           print(f"The area of the square is {Square._side ** 2}.")
 
+      # Will calculate perimeter.
      def calculatePerimeter(self):
-          #will calculate perimeter.
-          
           print(f"The perimeter of the square if {4 * Square._side}.")
 
+     # Will tell number of sides
      def noofsides(self):
-          #will tell number of sides
-          
           print(f"The number of sides is 4.")
 
-#the rest classes and methods are created in the same type.
-
+# The rest classes and methods are created in the same type.
 class Rectangle(Shape):
 
      _length = int(input("Enter the length: "))
@@ -80,10 +74,9 @@ class Ellipse(Shape):
      def noofsides(self):
           print(f"It's an ellipse so there are infinite sides.")
 
-#Object creation and methods calling
-#each class has a seperate object
-#methods are called for each class
-
+# Object creation and methods calling
+# Each class has a seperate object
+# Methods are called for each class
 Square_object = Square()
 Square_object.calculateArea()
 Square_object.calculatePerimeter()
