@@ -1,7 +1,8 @@
 # Python code to demonstrate example of 
-# hierarchical inheritance
-
+# Hierarchical inheritance
+# Class Details created
 class Details:
+    
     def __init__(self):
         self.__id="<No Id>"
         self.__name="<No Name>"
@@ -15,7 +16,8 @@ class Details:
         print("Name: ", self.__name)
         print("Gender: ", self.__gender)
 
-class Employee(Details): #Inheritance
+# Class Employee created
+class Employee(Details): # Inheritance
     def __init__(self):
         self.__company="<No Company>"
         self.__dept="<No Dept>"
@@ -28,6 +30,7 @@ class Employee(Details): #Inheritance
         print("Company: ", self.__company)
         print("Department: ", self.__dept)
 
+# Class Doctor created
 class Doctor(Details): #Inheritance
     def __init__(self):
         self.__hospital="<No Hospital>"
