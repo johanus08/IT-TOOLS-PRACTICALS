@@ -1,23 +1,21 @@
+# Class property function created
 class property_function_demo:
-     #class property function created
-     
+    
+     # Initializing the function
      def __init__(self):
-          
           self._age = 0
 
+     # Fucntion for printing the age
      def get_age(self):
-          #fucntion for printing the age
-          
-          print("Getter method called")
-          return self._age
+         print("Getter method called")
+         return self._age
 
+     # Function for setting the age
      def set_age(self,age):
-          #function for setting the age
-          
           print("setter method called")
 
+     # Function for deleting the age
      def delete_age(self):
-          #function for deleting the age
           del self.age
 
      age = property(get_age,set_age)
